@@ -2,9 +2,9 @@ version: 0.1
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket pdomala-lambda-pipeline-deepti --output-template-file outputSamTemplate.yaml
+      - aws cloudformation package --template-file /Lambda-serverless-pipeline/samTemplate.yaml --s3-bucket pdomala-lambda-pipeline-deepti --output-template-file /Lambda-serverless-pipeline/outputSamTemplate.yaml
 artifacts:
   type: zip
   files:
-    - samTemplate.yaml
-    - outputSamTemplate.yaml
+    - /Lambda-serverless-pipeline/samTemplate.yaml
+    - /Lambda-serverless-pipeline/outputSamTemplate.yaml
