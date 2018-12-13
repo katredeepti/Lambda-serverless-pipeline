@@ -11,7 +11,7 @@ Resources:
       Description: 'LambdaCode'
       MemorySize: 256
       Timeout: 30
-      Role: 'arn:aws:iam::992014891278:role/service-role/lambda-cd-project-role'
+      Role: 'arn:aws:iam::992014891278:role/lambda-ec2'
       Events:
         getAZsAPI:
           Type: Api
