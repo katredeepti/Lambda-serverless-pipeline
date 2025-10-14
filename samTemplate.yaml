@@ -21,5 +21,15 @@ Resources:
       Environment:
         Variables:
           REGION: us-east-2
+      jobs:
+        - job_name: sql_servers
+          collectors: [mssql_lime, mssql_standard]
+          enable_ping: true
+          static_configs:
+          - targets:
+            sql-server-1: 'sqlserver:xyz'
+          labels:
+            environment: dev
+            datacenter: eu-north-1
  
  
